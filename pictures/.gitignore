@@ -1,0 +1,2 @@
+pictures/*.mp4
+!pictures/web_*.mp4
