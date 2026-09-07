@@ -103,7 +103,8 @@ p.body{color:#C3C8D0;max-width:66ch;margin-top:16px;font-size:0.97rem}
   .btn.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
 
   /* clips */
-  .clips{display:grid;grid-template-columns:1fr;gap:16px;margin-top:30px}
+  .clips{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+  @media(max-width:620px){.clips{grid-template-columns:1fr}}
   .clip figcaption{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5}
   .clip figcaption b{color:var(--ink);font-weight:400;display:block;margin-bottom:2px}
   .frame{position:relative;aspect-ratio:2/1;border-radius:12px;overflow:hidden;
