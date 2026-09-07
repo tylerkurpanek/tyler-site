@@ -230,26 +230,20 @@ p.body{color:#C3C8D0;max-width:66ch;margin-top:16px;font-size:0.97rem}
     <section id="tape">
       <div class="label reveal">Featured work</div>
       <h2 class="reveal">Upper Hand Fantasy</h2>
-      <p class="body reveal">A fantasy football SaaS I build and ship solo as the contract engineer. The whole product: draft tools, dynasty rankings, a trade calculator, a live draft assistant, and season-long league sync, from the Postgres schema and Stripe billing up to the React on top. <a class="chip" href="https://upperhandfantasy.com" target="_blank" rel="noopener">upperhandfantasy.com &#8599;</a></p>
-
+      <p class="body reveal">I build and ship this fantasy football SaaS solo. Not just the interface: a normalized Postgres schema, a nightly data pipeline that pulls, cleans, and reconciles player rankings and ADP, the analytics powering every ranking and trade value, full Stripe billing, and the React on top. Database to pixels, one person. <a class="chip" href="https://upperhandfantasy.com" target="_blank" rel="noopener">upperhandfantasy.com &#8599;</a></p>
       <div class="clips">
         <!-- Drop clip in: replace <div class="ph"> with <video src="clips/draft.mp4" autoplay muted loop playsinline></video> -->
         <figure class="clip">
           <div class="frame media reveal"><video src="pictures/web_Livedraftassistanb.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-          <figcaption><b>Live Draft Assistant</b>Real-time pick tracking with keeper support and pick-trading.</figcaption>
-        </figure>
+          <figcaption><b>Live Draft Assistant</b>Real-time draft board with keeper support and pick-trading, wired to a who-to-draft engine that scores the board live against my rankings.</figcaption>        </figure>
         <figure class="clip">
           <div class="frame media reveal"><video src="pictures/web_amountoftools.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-          <figcaption><b>Dynasty Lab</b>Rankings, a trade calculator, and a player-value stock market.</figcaption>
-        </figure>
+          <figcaption><b>The Toolkit</b>Dynasty rankings, a player-value stock market, and a trade calculator backed by a Postgres trade-values table with PPR and standard scoring splits.</figcaption>        </figure>
         <figure class="clip">
           <div class="frame media reveal"><video src="pictures/web_checkoutneedblur.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-          <figcaption><b>ADP Pipeline</b>Five sources aggregated nightly, with historical charts and risers/fallers.</figcaption>
-        </figure>
-        <figure class="clip">
+          <figcaption><b>Checkout &amp; Billing</b>The full payment stack: Stripe webhooks, a Supabase entitlements table as the source of truth, legacy member migration on a nightly job, and transactional email.</figcaption>        <figure class="clip">
           <div class="frame media reveal"><video src="pictures/web_generalvid.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-          <figcaption><b>Grade My Team</b>AI team review streamed from a custom endpoint.</figcaption>
-        </figure>
+          <figcaption><b>Rookie Kit</b>Prospect profiles, mock-draft tables, and rookie ADP, fed by a nightly pipeline aggregating five sources (ESPN, Sleeper, Yahoo, CBS, Underdog) with historical charts and biggest-movers.</figcaption>        </figure>
       </div>
     </section>
 
