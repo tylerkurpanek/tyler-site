@@ -102,6 +102,12 @@ p.body{color:#C3C8D0;max-width:66ch;margin-top:16px;font-size:0.97rem}
   .btn.ghost{border:1px solid var(--line);color:var(--ink)}
   .btn.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
 
+  /* upper hand lede — two-column magazine */
+  .lede-cols{columns:2 330px;column-gap:46px;margin-top:20px}
+  .lede-cols p{color:#C3C8D0;font-size:1.02rem;line-height:1.65;margin:0 0 15px;break-inside:avoid}
+  .lede-cols p:last-child{margin-bottom:0}
+  @media(max-width:620px){.lede-cols{columns:1}}
+
   /* clips */
   .clips{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
   @media(max-width:620px){.clips{grid-template-columns:1fr}}
@@ -230,7 +236,12 @@ p.body{color:#C3C8D0;max-width:66ch;margin-top:16px;font-size:0.97rem}
     <section id="tape">
       <div class="label reveal">Featured work</div>
       <h2 class="reveal">Upper Hand Fantasy</h2>
-      <p class="body reveal">I build and ship this fantasy football SaaS solo. Not just the interface: a normalized Postgres schema, a nightly data pipeline that pulls, cleans, and reconciles player rankings and ADP, the analytics powering every ranking and trade value, full Stripe billing, and the React on top. Database to pixels, one person. <a class="chip" href="https://upperhandfantasy.com" target="_blank" rel="noopener">upperhandfantasy.com &#8599;</a></p>
+      <div class="lede-cols reveal">
+        <p>I'm a developer for Upper Hand Fantasy, and I've built close to twenty tools for it, from the Postgres schema up to the React on top. More than 200 people pay for what I ship, and they tell me the instant the data is wrong. Working solo means I never get to specialize: every time the product grows it drops me into something I've never done and have to learn fast.</p>
+        <p>The clearest example is the retrieval system I taught myself to build from scratch this year. I transcribed roughly 2,400 media files and embedded more than 11,000 chunks into a vector database so the product could answer questions in a specific expert's own voice. A year ago I had never touched that kind of work. Now it runs in production.</p>
+        <p>The part I love most is that I'm not just the engineer here, I'm the user. ADP is usually shown as a single number, but as a fantasy player I knew the real signal is in how that number moves. So I pitched a view that tracks it over time and surfaces the sharpest risers and fallers, and it became one of the tools people lean on most. Building things that reveal the patterns underneath the game is the work I most want to be doing, and here I get to do exactly that.</p>
+        <p><a class="chip" href="https://upperhandfantasy.com" target="_blank" rel="noopener">upperhandfantasy.com &#8599;</a></p>
+      </div>
       <div class="clips">
         <!-- Drop clip in: replace <div class="ph"> with <video src="clips/draft.mp4" autoplay muted loop playsinline></video> -->
         <figure class="clip">
