@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Privacy Policy</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#161616);--ink:light-dark(#111111,#e6e6e6);--soft:light-dark(#555555,#a8a8a8)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Times New Roman",Times,Georgia,serif;overflow-x:clip}
+main{max-width:720px;margin:0 auto;padding:48px max(5vw,16px) 64px;counter-reset:sec}
+h1{font-size:28px;font-weight:700;margin:0 0 4px;text-align:center}
+.meta{text-align:center;color:var(--soft);margin:0 0 32px}
+h2{font-size:17px;font-weight:700;margin:28px 0 6px;counter-increment:sec}
+h2::before{content:counter(sec) ". "}
+p,li{text-align:justify;hyphens:auto}
+ul{padding-left:1.4em}li{margin:4px 0}
+a{color:inherit}
+footer{margin-top:40px;color:var(--soft);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Create · Effective November 25, 2026</p>
+
+  <p>This policy explains what information the Create app ("Create," "the app") collects, how it is used, and the choices you have. In short: your data is stored on your iPhone, optional backups are encrypted on your device before upload, and the app contains no advertising, tracking or analytics.</p>
+
+  <h2>Information stored on your device</h2>
+  <p>Create stores what you add (activities, the time you track, notes, checklists, reflections and ratings) in a database on your iPhone. You don't need an account to use the app. If you delete the app without backups turned on, this data is deleted with it.</p>
+
+  <h2>Accounts</h2>
+  <p>If you choose to turn on backups, you sign in with Sign in with Apple. Your account is stored with Supabase, the service that hosts Create's backups, and includes the identifier and email address Apple shares (which can be a private relay address if you choose "Hide My Email").</p>
+
+  <h2>Encrypted backups</h2>
+  <p>When backups are on, Create encrypts your data on your iPhone with a key made from your recovery key, using AES-256-GCM, before uploading it. The recovery key stays in your iPhone's Keychain and wherever you save it. The server only ever stores scrambled data, so no one can read it without your recovery key, including the developer. Create keeps up to 30 days of daily backups so you can restore an earlier day.</p>
+
+  <h2>The Ask feature</h2>
+  <p>The Ask feature answers questions about your own sessions and reflections. When you ask a question, your phone unlocks the relevant parts of your journal and sends them with your question, over an encrypted connection, to Anthropic's Claude API, which writes the answer. Create does not store your questions or this data on its server. Anthropic processes it under its API terms and privacy policy. Ask requires signing in and is limited to a set number of questions per day.</p>
+
+  <h2>Voice input</h2>
+  <p>If you use the Record button, Create uses Apple's speech recognition to turn your voice into text. On iPhones that support it, this happens on the device. Create saves only the resulting text, never audio.</p>
+
+  <h2>Notifications and Live Activities</h2>
+  <p>Reflection reminders and break reminders are scheduled on your phone. The lock screen timer is an iOS Live Activity that you can turn off anytime on the More tab.</p>
+
+  <h2>Advertising, tracking and sharing</h2>
+  <ul>
+    <li>No advertising, and no ad or analytics SDKs.</li>
+    <li>No tracking across other apps or websites.</li>
+    <li>No selling or sharing of your data with anyone except the services described above, only to provide those features.</li>
+  </ul>
+  <p>Apple may share crash reports with the developer if you've allowed that in your iPhone's settings.</p>
+
+  <h2>Deleting your data</h2>
+  <p>On the More tab, Delete account permanently deletes your account and all of your encrypted backups and synced reflections from the server. Data on your phone stays until you delete it or delete the app.</p>
+
+  <h2>Children</h2>
+  <p>Create is not directed to children under 13, and does not knowingly collect information from them.</p>
+
+  <h2>Changes to this policy and contact</h2>
+  <p>If this policy changes, the new version will be posted here with a new effective date. For questions, use the support contact on Create's App Store page.</p>
+
+  <footer>Create is made by Tyler Kurpanek.</footer>
+</main>
+</body>
+</html>
